@@ -1,0 +1,36 @@
+---
+layout: home
+title: Anasayfa
+sitemap:
+priority: 1.0
+changefreq: weekly
+lastmod: 2014-07-07T16:57:30+05:30
+---
+{% for post in paginator.posts %}
+<div class="unit whole single-post-excerpt">
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	<div class="meta-info">
+		<span class="meta"><time class="timeago postlist-meta" datetime="{{ post.date | date: "%d.%m.%Y" }}"><i class="fa fa-calendar"></i>{{ post.date | date: "%d.%m.%Y" }}</time></span>
+		{% if post.tags and post.tags.size > 0 %}
+			<div class="tags">
+				Etiket:
+				{% for tag in post.tags %}
+				<span>
+				     <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag"><i class="fa fa-tag"></i>{{ tag }}</a>				
+				</span>				
+				{% endfor %}
+			</div>
+		{% endif %}
+	</div>
+	<p class="description">{{ post.excerpt | strip_html}}</p>
+</div>
+{% endfor %}
+<div class="unit whole paginator">
+	{% if paginator.previous_page %}
+	<a href="{{ paginator.previous_page_path }}" class="previous">Geri</a>
+	{% endif %}
+	<span>Sayfa: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+	{% if paginator.next_page %}
+	<a href="{{ paginator.next_page_path }}" class="next">İleri</a>
+	{% endif %}
+</div>
