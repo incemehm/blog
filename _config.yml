@@ -4,7 +4,7 @@ timezone: Europe/Istanbul
 future: true
 markdown: kramdown
 ##syntax highlighter. change it to pygments
-highlighter: rouge
+highlighter: pygments
 
 ##define base_url for valid usage in sitemap.xml and robots.txt
 base_url: http://incemehm.github.io/blog
