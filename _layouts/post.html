@@ -22,7 +22,7 @@ layout: default
 				Etiket:
 				{% for tag in page.tags %}
 				<span>
-				     <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag"><i class="fa fa-tag"></i>{{ tag }}</a>				
+				     <a href="{{ site.base_url }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag"><i class="fa fa-tag"></i>{{ tag }}</a>				
 				</span>
 				{% endfor %}
 			</div>
