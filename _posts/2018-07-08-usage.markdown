@@ -3,11 +3,11 @@ layout: post
 title:  "Usage Instruction"
 date:   2018-07-08 20:45:35
 categories: Markdown 
-tags: cs
+tags: CSharp
 ---
 ### Code snippet
 
-~~~c
+~~~c#
 <?php
 
 class ClosureDispatcher
