@@ -2,9 +2,7 @@
 name: Kod Defteri
 timezone: Europe/Istanbul
 future: true
-markdown: kramdown
-##syntax highlighter. change it to pygments
-highlighter: rouge
+
 
 ##define base_url for valid usage in sitemap.xml and robots.txt
 base_url: http://incemehm.github.io/blog

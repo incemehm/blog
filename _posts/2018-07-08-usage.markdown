@@ -3,10 +3,18 @@ layout: post
 title:  "Usage Instruction"
 date:   2018-07-08 20:45:35
 categories: Markdown 
+tags: jekyll blog github-page
 ---
 ### Code snippet
 
-~~~c
+
+```csharp
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+~~~csharp
 <?php
 
 class ClosureDispatcher2
