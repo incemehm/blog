@@ -9,7 +9,7 @@ categories: Markdown
 ~~~c
 <?php
 
-class ClosureDispatcher
+class ClosureDispatcher2
 {
 
     public function call(Closure $closure, $scope = NULL) {
